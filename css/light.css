@@ -1,0 +1,89 @@
+*html #G-lightbox-mask{
+    position: absolute;
+}
+*html #G-lightbox-popup{
+    position: absolute;
+}
+/*bug 结束*/
+#G-lightbox-mask{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    z-index:1000;
+    display: none;
+}
+#G-lightbox-popup{
+    position:fixed;
+    left:50%;
+    top:50px;
+    width:450px;
+    margin-left: -225px;
+    z-index:1001;
+    display: none;
+}
+#G-lightbox-popup .lightbox-pic-view{
+
+    position:relative;
+    border:5px solid #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+/*背景加载图*/
+#G-lightbox-popup .lightbox-pic-view {
+    /*background:#ffffff url(../icon-image/loading.gif) no-repeat center center;*/
+}
+#G-lightbox-popup .lightbox-pic-view .lightbox-btn{
+    position:absolute;
+    top:0;
+    width:30%;
+    height:100%;
+    background: url(../icon-image/transparent.png) repeat left top;
+    z-index:1;
+}
+#G-lightbox-popup .lightbox-pic-view .lightbox-prev-btn{
+    left:0;
+}
+#G-lightbox-popup .lightbox-pic-view .lightbox-next-btn{
+    right:0
+}
+#G-lightbox-popup .lightbox-pic-view .lightbox-prev-show{
+    cursor:pointer;
+    background: url(../icon-image/prev.png) no-repeat left center;
+}
+#G-lightbox-popup .lightbox-pic-view .lightbox-next-show{
+    cursor:pointer;
+    background: url(../icon-image/next.png) no-repeat right center;
+}
+#G-lightbox-popup .lightbox-pic-view .lightbox-image{
+    display: block;
+}
+#G-lightbox-popup .lightbox-pic-caption{
+    position:relative;
+    background: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    margin:-60px 5px 0 5px;
+}
+#G-lightbox-popup .lightbox-pic-caption .lightbox-caption-area{
+    color:#fff;
+    padding:10px 5px;
+    line-height: 16px;
+}
+.lightbox-pic-caption .lightbox-caption-area .lightbox-of-index{
+    color:#999;
+}
+.lightbox-pic-caption .lightbox-close{
+    display: inline-block;
+    position:absolute;
+    right:10px;
+    top:13px;
+    width:27px;
+    height: 27px;
+    background: url(../icon-image/close.png) no-repeat center center;
+    z-index:2;
+}

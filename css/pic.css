@@ -1,0 +1,212 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,menu,nav,section,summary {
+    display:block;
+}
+
+nav ul,li{
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+body{
+    width:100%;
+    height:100%;
+    background: url(../images/bg_v4.jpg) no-repeat center center;
+
+}
+#container{
+    margin:0 auto;
+}
+.nav{
+    background: url(../images/bg-dark.jpg) repeat-x;
+
+    height:56px;
+    opacity: 0.9;
+    filter:alpha(opacity=90);
+    z-index:9999;
+}
+.nav .nav_list{
+    width:960px;
+    margin:0 auto;
+}
+.nav a{
+    display: block;
+    width:160px;
+    height: 51px;
+    float: left;
+    background: url(../images/whut_logo.png) no-repeat left -46px;
+    margin-left: 45px;
+}
+.nav a:hover{
+    height: 51px;
+    background: url(../images/whut_logo.png) no-repeat -2px 6px;
+}
+.nav .navs{
+    margin-left: 100px;
+}
+.nav img{
+    float: left;
+    margin-left:150px;
+}
+.nav h3{
+    float:left;
+    padding:20px 40px;
+    color:white;
+    cursor: pointer;
+    border-right:1px solid #6D6D6D;
+}
+.nav h3:hover{
+    background: #000000;
+    color:#539EBA;
+    opacity: 1;
+    filter:alpha(opacity=100);
+}
+.active{
+    background-color: #000000;
+    color:#539EBA;
+    opacity: 1;
+    filter:alpha(opacity=100);
+}
+div.nav .nav_list>h3:nth-child(2){
+   margin-left: 10px;
+   padding:20px 35px;
+}
+div.nav .nav_list>h3:nth-child(7){
+    border-right:0;
+}
+.content{
+    width:960px;
+    margin:10px auto;
+    overflow: hidden;
+}
+.content .tab_con{
+    width:870px;
+    margin:0 auto;
+    overflow: hidden;
+}
+.content .tab_con li{
+    width:270px;
+    height:200px;
+    position:relative;
+    float: left;
+    padding:0px;
+    margin:5px 10px 9px 10px;
+
+}
+.content .tab_con li div{
+    width:270px;
+    height:0px;
+    background: #ffffff;
+    overflow: hidden;
+
+}
+.content .tab_con li div span{
+    float:right;
+    margin-right: 10px;
+}
+.content .tab_con li img {
+    display: block;
+    border: 10px solid #ffffff;
+    cursor: pointer;
+}
+
+/*返回顶部*/
+.btn_top{
+    width:50px;
+    height:56px;
+    background:url("../images/icons.png") no-repeat 10px 8px #000000;
+    opacity:0.6;
+    border-radius: 5px;
+    position:fixed;
+    left:50%;
+    margin-left:580px;
+    bottom:50px;
+    cursor: pointer;
+}
+
+.btn_top:hover{
+    opacity:0.9;
+}
